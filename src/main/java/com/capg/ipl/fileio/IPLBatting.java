@@ -1,4 +1,5 @@
 package com.capg.ipl.fileio;
+
 import com.opencsv.bean.CsvBindByName;
 
 public class IPLBatting {

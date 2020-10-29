@@ -96,6 +96,4 @@ public class IPLBowling {
 	public int getFiveWickets() {
 		return fiveWickets;
 	}
-
-	
 }
