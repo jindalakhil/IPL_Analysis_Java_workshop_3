@@ -5,5 +5,7 @@ import com.capg.ipl.fileio.IPLBatting;
 
 public class BattingDataSorter {
 
-	public final static Comparator<IPLBatting> TOP_BATTING_AVG = Comparator.comparing(IPLBatting::getAverage);
+	public static Comparator<IPLBatting> TOP_BATTING_AVG = Comparator.comparing(IPLBatting::getAverage);
+
+	public static Comparator<IPLBatting> TOP_STRIKING_RATE = Comparator.comparing(IPLBatting::getStrikeRate);
 }
