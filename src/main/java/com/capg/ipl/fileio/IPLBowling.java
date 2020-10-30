@@ -76,7 +76,7 @@ public class IPLBowling {
 	}
 
 	public double getAverage() {
-		if(average.equals("-")) return 0.0;
+		if(average.equals("-") || average.equals("")) return 0.0;
 		return Double.parseDouble(average);
 	}
 
