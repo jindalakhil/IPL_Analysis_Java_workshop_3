@@ -85,7 +85,7 @@ public class IPLBowling {
 	}
 
 	public double getStrikeRate() {
-		if(strikeRate.equals("-")) return 0.0;
+		if(strikeRate.equals("-") || average.equals("")) return 0.0;
 		return Double.parseDouble(strikeRate);
 	}
 
