@@ -42,4 +42,10 @@ public class IPLBowlingDataTest {
 		sortedList = iplAnalyser.sortBowlingData(bowlingList, BowlingDataSorter.TOP_BOWLING_AVG);
 		Assert.assertEquals("Krishnappa Gowtham", sortedList.get(100).getPlayer());
 	}
+	
+	@Test
+	public void givenBowlingData_shouldReturnTopEconomyRate() {
+		sortedList = iplAnalyser.sortBowlingData(bowlingList, BowlingDataSorter.TOP_ECONOMY_RATE);
+		Assert.assertEquals("Ben Cutting", sortedList.get(100).getPlayer());
+	}
 }
