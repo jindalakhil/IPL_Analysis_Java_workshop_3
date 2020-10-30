@@ -18,6 +18,9 @@ public class BattingDataSorter {
 	 public static Comparator<IPLBatting> MAX_RUN_WITH_BEST_AVG = Comparator.comparing(IPLBatting::getRuns).thenComparing(TOP_BATTING_AVG );
 	 
 	 public static Comparator<IPLBatting> MAX_HUNDRED_WITH_BEST_AVG = Comparator.comparing(IPLBatting::getCentury).thenComparing(TOP_BATTING_AVG);
+	 
+	 public static Comparator<IPLBatting> ZER0_HALF_OR_FULL_CENTURY_NUT_BEST_AVG = Comparator.comparing(batsman -> 
+     ( batsman.getCentury() == 0 && batsman.getHalfCentury() == 0)?batsman.getAverage(): 0.0);
 
 	 
 }
